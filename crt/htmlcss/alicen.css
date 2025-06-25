@@ -1,0 +1,9 @@
+p{
+    text-align: center;
+    background-color: rgb(238, 182, 161);
+    text-decoration:underline;
+    text-transform: capitalize;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+    line-height: 3;
+}

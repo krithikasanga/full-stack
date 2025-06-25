@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            animation: myanime 5s infinite alternate;
+        }
+        @keyframes myanime{
+            0%{
+                left: 0px;
+                background-color: pink;
+                opacity: 1;
+                transform: translateX(0px);
+            }
+            50%{
+                left: 50px;
+                background-color: rgb(226, 6, 219);
+                opacity: 0.5;
+                transform: translateX(100px);
+                transform: rotate(90deg);
+            }
+            100%{
+                left: 100px;
+                background-color: rgb(78, 171, 224);
+                transform: translateX(200px);
+            }      
+        }
+    </style>
+</head>
+<body><!-- key frames help to buid a frame from x position-->
+    <div>
+        <h1>hello</h1>
+    </div>
+</body>
+</html>

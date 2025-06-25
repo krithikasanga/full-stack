@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inheritance</title>
+    <style>
+        .flex{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            align-items: center;
+            background-color: rgb(205, 128, 190);
+            color: rgb(231, 80, 130);
+            gap: 50px;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .flex1{
+            display: flex;
+            border:solid;
+            border-color: rgb(171, 9, 38);
+            border-radius: 5px;
+            height: 55px;
+            width: 55px;
+            background-color: rgb(234, 186, 211);
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+        }
+        .flex > .flex1{
+            background-color: coral;
+        }
+        .flex > .f{
+            background-color: aqua;
+            height: 55px;
+            width: 55px;
+            border-radius: 5px;
+            border :solid;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+            display: flex;
+            border:solid; border-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="f">1</div>
+        <div class="f">2</div>
+        <div class="flex1">3</div>
+        <div class="flex1">4</div>
+    </div>
+</body>
+</html>
